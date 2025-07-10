@@ -56,6 +56,8 @@ DB_PORT=your_db_port
 ```
 Use Railway to provision the database and copy credentials from its dashboard.
 
+---
+
 ### Frontend (React)
 
 ```bash
@@ -69,6 +71,8 @@ npm run dev
 VITE_API_URL=https://your-backend-url.up.railway.app
 ```
 This will connect the frontend to your live backend API.
+
+---
 
 🧪 Testing
 
