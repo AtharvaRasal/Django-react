@@ -49,8 +49,18 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: ⚙️ Run Django Tests
+    - name: 📊 Run Tests with Coverage
       run: |
         cd backend
         python manage.py migrate
-        python manage.py test
+        coverage run manage.py test
+        coverage report
+        coverage xml
+
+    - name: 📤 Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: backend/coverage.xml
+        flags: unittests
+        name: django-tests
