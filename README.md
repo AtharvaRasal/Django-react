@@ -93,9 +93,11 @@ CI/CD automatically uploads coverage to Codecov
 
 🔄 CI/CD with GitHub Actions:
 
-✅ Auto install & test backend on every commit
-📤 Upload coverage report to Codecov
-🚀 Deploy backend to Railway and frontend to Vercel automatically on push to main
+✅ Auto install & test backend on every commit.
+
+📤 Upload coverage report to Codecov.
+
+🚀 Deploy backend to Railway and frontend to Vercel automatically on push to main.
 
 ---
 
